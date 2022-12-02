@@ -1,3 +1,8 @@
+:root {
+  --body-background-color: #7265c7d8;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +12,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--body-background-color);
 }
 
 h1,
@@ -22,19 +28,23 @@ p {
   margin: 0;
 }
 
-.hero-banner {
+.hero-banner {  
+background-image: url("../images/060407a0003.jpg");
+background-repeat: no-repeat;
+height: 500px;
+background-size: cover;
+background-position: center;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 75%;
 
 }
 
-.page wrapper {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+.article {
+
 }
 
 
