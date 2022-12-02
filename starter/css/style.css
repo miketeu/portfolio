@@ -1,5 +1,6 @@
 :root {
   --body-background-color: #7265c7d8;
+  --h2-color: aliceblue;;
 }
 
 
@@ -44,7 +45,21 @@ background-position: center;
 }
 
 .article {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  margin-top:2em ;
 
 }
 
+h2, h1 {
+  color:var(--h2-color);
+  margin-left: 2em;
+}
+h1 {
+  text-align: center;
+}
+
+.contact {
+  color:var(--h2-color);
+}
 
