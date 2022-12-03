@@ -73,6 +73,7 @@ h1 {
 .logo {
   text-shadow: var(--shadow);
   align-items: flex-start;
+  float: left;
 }
 
 .nav {
