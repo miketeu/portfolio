@@ -1,6 +1,7 @@
 :root {
   --body-background-color: #7265c7d8;
-  --h2-color: aliceblue;;
+  --h2-color: aliceblue;
+  --shadow: 4px 4px 8px black;
 }
 
 
@@ -56,10 +57,48 @@ h2, h1 {
   margin-left: 2em;
 }
 h1 {
-  text-align: center;
+  
 }
 
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .contact {
   color:var(--h2-color);
 }
 
+.logo {
+  text-shadow: var(--shadow);
+  align-items: flex-start;
+}
+
+.nav {
+  display: flex;
+ justify-content: flex-end;
+  align-items: center;
+  color: var(--h2-color);
+  margin-right: 2em;
+  padding: 20px 50px;
+  margin: 0 20px;
+}
+.nav a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: var(--h2-color);
+  transition: all o.3s ease 0s;
+  text-shadow: var(--shadow);
+}
+nav a:hover {
+  color: rgb(203, 53, 146);
+}
+.portfolio {
+  text-shadow: var(--shadow);
+  font-size: 5em;
+  padding-top: 2em;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
