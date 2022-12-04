@@ -39,7 +39,7 @@ background-position: center;
 }
 
 .personal {
-  margin-top: 1.5em;
+  margin-top: 1em;
   font-family: Pacifico;
   color: var(--h2-color);
 }
@@ -111,3 +111,12 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
+.work-section {
+   display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 
+  ;
+
+}
+
