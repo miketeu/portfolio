@@ -3,7 +3,7 @@
   --h2-color: aliceblue;
   --shadow: 4px 4px 8px black;
 }
-
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 * {
   box-sizing: border-box;
@@ -38,7 +38,16 @@ background-size: cover;
 background-position: center;
 }
 
+.personal {
+  margin-top: 1.5em;
+  font-family: Pacifico;
+  color: var(--h2-color);
+}
 
+.personal::first-letter {
+  text-transform: capitalize;
+  font-size: 2em;
+}
 .container {
   display: grid;
   grid-template-columns: 25% 75%;
@@ -61,7 +70,6 @@ h1 {
 }
 
 .navbar {
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
