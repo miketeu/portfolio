@@ -32,6 +32,7 @@ p {
 }
 
 .hero-banner {  
+  /* The background image in the hero section. Licence paid.*/
 background-image: url("../images/060407a0003.jpg");
 background-repeat: no-repeat;
 height: 500px;
@@ -57,14 +58,13 @@ background-position: center;
   /*This class controls the main grid section in the body of the page.*/
   display: grid;
   grid-template-columns: 25% 75%;
-
 }
 
 .article {
+  /*Class to disply the sections*/
   display: grid;
   grid-template-columns: 49% 49%;
   margin-top:2em ;
-
 }
 
 h2, h1 {
@@ -114,6 +114,13 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
 }
+.button {
+  border-radius: 20px;
+    grid-column-start: 2;
+  grid-column-end: 3;
+  margin-bottom: 2em;
+  background-color: chocolate;
+}
 .work-section {
    display: grid;
   grid-template-columns: 50% 50% ;
@@ -126,10 +133,11 @@ nav a:hover {
 }
 
 .fig-caption h3 {
-   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
   color: var(--h2-color);
   text-align: center;
+  padding-top: 2em;
 }
 .empty {
   width: 3 50%;
